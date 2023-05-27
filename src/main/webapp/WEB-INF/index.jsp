@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registro e Inicio de Sesión</title>
+<title>Registro e Inicio de SesiÃ³n</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="css/login.css">
 <script src="https://kit.fontawesome.com/0e449a2871.js" crossorigin="anonymous"></script>
@@ -27,12 +27,12 @@
 						<form:errors path="email" class="text-danger" />
 					</div>
 					<div>
-						<form:label path="contrasena">Contraseña</form:label>
+						<form:label path="contrasena">ContraseÃ±a</form:label>
 						<form:password path="contrasena" class="form-control" />
 						<form:errors path="contrasena" class="text-danger" />
 					</div>
 					<div>
-						<form:label path="confirmacion">Confirmación</form:label>
+						<form:label path="confirmacion">ConfirmaciÃ³n</form:label>
 						<form:password path="confirmacion" class="form-control" />
 						<form:errors path="confirmacion" class="text-danger" />
 					</div>
@@ -43,16 +43,16 @@
 		<div class="form-container login-container">
 				<p class="text-danger">${error_login}</p>
 				<form action="/login" method="post">
-				<h2>Inicia Sesión</h2>
+				<h2>Inicia SesiÃ³n</h2>
 					<div>
 						<label>E-mail</label>
 						<input type="text" class="form-control" name="email"  required="required"/>
 					</div>
 					<div>
-						<label>Contraseña</label>
+						<label>ContraseÃ±a</label>
 						<input type="password" class="form-control" name="contrasena"  required="required" />
 					</div>
-					<button>Iniciar Sesión</button>
+					<button>Iniciar SesiÃ³n</button>
 				</form>
 		</div>
 			
@@ -60,13 +60,13 @@
 			<div class="overlay">
 		        <div class="overlay-panel overlay-left">
 			          <h1 class="title">Hola <br> amigos/as</h1>
-			          <p>Si tienes una cuenta, inicia sesión aquí.</p>
-		          <button class="ghost" id="loginButton">Iniciar Sesión
+			          <p>Si tienes una cuenta, inicia sesiÃ³n aquÃ­.</p>
+		          <button class="ghost" id="loginButton">Iniciar SesiÃ³n
 		          </button>
 		        </div>
 		        <div class="overlay-panel overlay-right">
 		          <h1 class="title">Empieza <br> ahora</h1>
-		          <p>Regístrate y gestiona tareas, toma notas y encuentra motivación para alcanzar tus metas.</p>
+		          <p>RegÃ­strate y gestiona tareas, toma notas y encuentra motivaciÃ³n para alcanzar tus metas.</p>
 		          <button class="ghost" id="registerButton">Registrarse
 		          </button>
 		        </div>
@@ -74,6 +74,6 @@
 	    </div>
 			
 </div>
-<script src="../js/script.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>
